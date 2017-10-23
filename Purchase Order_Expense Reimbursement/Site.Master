@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Purchase_Order_Expense_Reimbursement.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <title>Purchase Order/Expense Reimbursement</title>
+    <link rel="stylesheet" href="~/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/CSS/custom.css" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/Scripts/custom.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Default.aspx">Home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a class="navbar-brand" href="Login.aspx">Purchase Order/Expense Reimbursement</a></li>
+                <li><a class="navbar-brand" href="LoginSales.aspx">Sales Lead Tracker</a></li>
+            </ul>
+        </div>
+    </nav>
+    <form id="formMaster" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="MasterContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
